@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 input {
@@ -22,6 +23,60 @@ input {
     gap: 1rem;
     justify-content: center;
     height: 100%;
+}
+
+.jogo__arena {
+    border: 2px solid black;
+    height: 150px;
+    position: relative;
+    width: 300px;
+}
+
+.jogo__character {
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 60px;
+    width: 60px;
+}
+
+/* Doomguy */
+.jogo__doomguy {
+    background-image: url("../img/doom-minigame/doomguy/idle/idle.gif");
+    background-position: left;
+    left: 1rem;
+}
+
+.jogo__doomguy--attack {
+    background-image: url("../img/doom-minigame/doomguy/attack/attack.gif");
+}
+
+.jogo__doomguy--death {
+    background-image: url("../img/doom-minigame/doomguy/death/death.gif");
+}
+
+.jogo__doomguy--victory {
+    background-image: url("../img/doom-minigame/doomguy/victory/victory.gif");
+}
+
+/* Imp */
+.jogo__imp {
+    background-image: url("../img/doom-minigame/imp/idle/idle.gif");
+    background-position: right;
+    right: 1rem;
+}
+
+.jogo__imp--attack {
+    background-image: url("../img/doom-minigame/imp/attack/attack.gif");
+}
+
+.jogo__imp--death {
+    background-image: url("../img/doom-minigame/imp/death/death.gif");
+}
+
+.jogo__imp--victory {
+    background-image: url("../img/doom-minigame/imp/victory/victory.gif");
 }
 
 .jogo__input {
