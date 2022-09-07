@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-input {
+input, button {
+    font-family: "AmazDooMRight", monospace;
     outline: none;
 }
 
@@ -84,10 +85,17 @@ input {
     background-image: url("../img/doom-minigame/imp/victory/victory.gif");
 }
 
+.jogo__titulo {
+    font-size: 2rem;
+    font-family: "AmazDooMRight", monospace;
+}
+
 .jogo__input {
+    font-size: 1.5rem;
     padding: .5rem;
 }
 
 .jogo__confirma {
+    font-size: 1.5rem;
     padding: 1rem;
 }
