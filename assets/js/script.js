@@ -8,7 +8,7 @@ const valorMaximo = parseInt(campoEntrada.max);
 let doomGuyHP = 5;
 let impHP = 5;
 
-jogoTitulo.innerHTML = `Chute um número de 1 a ${valorMaximo}`;
+jogoTitulo.innerHTML = `Chute um valor entre ${valorMinimo} e ${valorMaximo}`;
 
 botaoChuta.addEventListener("click", () => {
     const chute = parseInt(campoEntrada.value);
