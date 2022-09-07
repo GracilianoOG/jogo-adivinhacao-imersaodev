@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'AmazDooMRight';
+    src: url("../font/AmazDooMRight.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
