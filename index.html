@@ -7,16 +7,25 @@
     <title>Kick the IMP</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="wrapper">
     <main class="container">
         <div class="jogo">
             <div class="jogo__arena">
-                <div class="jogo__doomguy jogo__character"></div>
-                <div class="jogo__imp jogo__character"></div>
+                <div class="jogo__resultado"></div>
+                <div class="jogo__doomguy jogo__character">
+                    <div class="jogo__vida__doomguy"></div>
+                </div>
+                <div class="jogo__imp jogo__character">
+                    <div class="jogo__vida__imp"></div>
+                </div>
             </div>
             <h2 class="jogo__titulo"></h2>
-            <input class="jogo__input" type="number" min="1" max="5" placeholder="0">
-            <button class="jogo__confirma" type="button">Atacar</button>
+            <div class="jogo__acoes">
+                <input class="jogo__input" type="number" min="1" max="5" value="1">
+                <button class="jogo__confirma jogo__botao" type="button">Atacar</button>
+                <button class="jogo__habilidade jogo__botao jogo__botao--disabled" type="button">Curar</button>
+                <button class="jogo__reiniciar jogo__botao" type="button">Reset</button>
+            </div>
         </div>
     </main>
 
