@@ -24,5 +24,6 @@ Jogo que gera um número aleatório, e o usuário precisa chutar pra acertar. Ba
 Jogo desenvolvido no terceiro dia da Imersão Alura.
 
 * 📚 [Fonte do Doom utilizada](https://fontmeme.com/fonts/amazdoom-font/#previewtool)
+* 📚 [Gerador de GIFs](https://ezgif.com/)
 * 📚 [Paleta de cores utilizada](https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff)
 * 📚 [Sprites do doomguy, itens e inimigos tirados do Brutal Doom](https://www.moddb.com/mods/brutal-doom)
