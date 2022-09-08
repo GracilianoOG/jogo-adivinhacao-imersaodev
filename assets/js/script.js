@@ -1,3 +1,4 @@
+(()=> {
 const personagemDoomGuy = document.querySelector(".jogo__doomguy");
 const hudDoomguy = document.querySelector(".jogo__vida__doomguy");
 const hudImp = document.querySelector(".jogo__vida__imp");
@@ -102,3 +103,4 @@ botaoReiniciar.addEventListener("click", () => {
     hudDoomguy.style.width = "100%";
     hudImp.style.width = "100%";
 });
+})();
