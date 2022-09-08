@@ -14,28 +14,48 @@ input, button {
     outline: none;
 }
 
+.wrapper {
+    background-image: url("../img/main-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container {
-    background-color: lightcoral;
     margin: 0 auto;
     height: 100vh;
     width: 80vw;
 }
 
 .jogo {
-    background-color: lightblue;
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
 }
 
 .jogo__arena {
-    border: 2px solid black;
+    background-image: url("../img/backgrounds/background-01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #0B090A;
     height: 150px;
     position: relative;
     width: 300px;
+}
+
+.jogo__resultado {
+    color: #A4161A;
+    font-family: "AmazDooMRight", monospace;
+    font-size: 3rem;
+    left: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 
 .jogo__character {
@@ -66,6 +86,18 @@ input, button {
     background-image: url("../img/doom-minigame/doomguy/victory/victory.gif");
 }
 
+.jogo__vida__doomguy, .jogo__vida__imp {
+    background-color: #660708;
+    border: 1px solid #0B090A;
+    border-radius: 1px;
+    opacity: .8;
+    bottom: 75px;
+    height: 15px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
 /* Imp */
 .jogo__imp {
     background-image: url("../img/doom-minigame/imp/idle/idle.gif");
@@ -86,16 +118,69 @@ input, button {
 }
 
 .jogo__titulo {
+    color: #F5F3F4;
     font-size: 2rem;
     font-family: "AmazDooMRight", monospace;
 }
 
-.jogo__input {
-    font-size: 1.5rem;
-    padding: .5rem;
+.jogo__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 5%;
+    max-width: 300px;
 }
 
-.jogo__confirma {
+.jogo__destaque {
+    color: #A4161A;
+}
+
+.jogo__input {
+    background-color: #A4161A;
+    border: 1px solid #F5F3F4;
+    color: #F5F3F4;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.jogo__botao {
+    background-color: #A4161A;
+    border: 1px solid #F5F3F4;
+    border-radius: 5px;
+    color: #F5F3F4;
     font-size: 1.5rem;
     padding: 1rem;
+    transition: background-color 200ms;
+    width: 30%;
+}
+
+.jogo__botao--disabled {
+    background-color: #B1A7A6;
+    color: #660708;
+    pointer-events: none;
+}
+
+.jogo__botao:hover {
+    cursor: pointer;
+    background-color: #F5F3F4;
+    color: #A4161A;
+}
+
+.jogo__confirma::after {
+    content: url("../img/icons/weapon.png");
+    display: block;
+    opacity: .8;
+}
+
+.jogo__habilidade::after {
+    content: url("../img/icons/medkit.png");
+    display: block;
+    opacity: .8;
+}
+
+.jogo__reiniciar::after {
+    content: url("../img/icons/helmet.png");
+    display: block;
+    opacity: .8;
 }
